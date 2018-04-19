@@ -1,0 +1,49 @@
+{
+  "register": {
+    "reg": true
+  },
+  "task": {
+    "dome": "",
+    "type": "background",
+    "requirement": "right"
+  },
+  "check": {
+    "s": "2",
+    "e": "FOOTADVANCED"
+  },
+  "status": {
+    "accuracyLeft": "69",
+    "accuracyRight": "69",
+    "r": 0,
+    "l": 0
+  },
+  "user": {
+    "user": {
+      "id": 1059,
+      "loginNumber": "352567567567",
+      "email": "567567567@mailforspam.com",
+      "phone": "253364774747",
+      "isNew": false,
+      "isNeedUpdate": false,
+      "status": 2,
+      "age": 5,
+      "name": null,
+      "surname": "test",
+      "sex": 1,
+      "accuracy": 90,
+      "access": 0,
+      "feet": {
+        "right": {
+          "accuracy": 90,
+          "length": 252
+        },
+        "left": {
+          "accuracy": 90,
+          "length": 254
+        }
+      }
+    }
+  },
+  "create": {},
+  "exit": {}
+}

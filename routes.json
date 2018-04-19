@@ -1,0 +1,10 @@
+{
+  "/showroom/api/register": "/register",
+  "/avatar/task?*": "/task",
+  "/avatar/check?*": "/check",
+  "/avatar/status?*": "/status",
+  "/imigize/user": "/user",
+  "/wildberries/create": "/create",
+  "/api/user/exit": "/exit"
+
+}

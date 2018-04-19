@@ -1,0 +1,35 @@
+$w1920: 1600px;
+$w768: 768px;
+$w320: 320px;
+
+@mixin responsiveFont($bigFont, $smallFont) {
+
+    $bigView: $w1920;
+    $smallView: $w320;
+    $m: ($bigFont - $smallFont) / ($bigView - $smallView);
+    $b: $smallFont - ($m * $smallView);
+
+    @media only screen and (min-width: $smallView) {
+        font-size: calc(#{$m} * 100vw + #{$b});
+    }
+
+    @media only screen and (min-width: $bigView) {
+        font-size: $bigFont;
+    }
+}
+
+@mixin w1920 {
+    @media only screen and (min-width: #{$w1920}) {
+        @content;
+    }
+}
+@mixin w768-1919 {
+    @media only screen and (min-width: #{$w768}) and (max-width: #{$w1920 - 1px}) {
+        @content;
+    }
+}
+@mixin w320-767 {
+    @media only screen and (max-width: #{$w768 - 1px}) {
+        @content;
+    }
+}
